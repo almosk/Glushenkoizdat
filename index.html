@@ -2,16 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Глушенкоиздат</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/scenario.js" charset="utf-8"></script>
   </head>
 
   <body>
     <section class="bg">
       <section class="videoWrapper">
-        <iframe id="video" src="https://player.vimeo.com/video/225091148?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div class="picture"></div>
+        <iframe class="hidden" id="video" src="https://player.vimeo.com/video/225091148?loop=1&title=0&byline=0&portrait=0&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </section>
       <div class="black"></div>
 

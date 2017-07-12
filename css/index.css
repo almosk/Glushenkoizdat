@@ -5,16 +5,23 @@
   box-sizing: border-box;
   font-family: Journal Sans; }
 
+.hidden {
+  opacity: 0; }
+
 a {
   color: inherit;
   text-decoration: none; }
 
-a:hover {
-  transform: scale(1.1);
-  transition: .3s ease; }
-
 .body {
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: black; }
 
 .videoWrapper {
   width: 100vw;
@@ -23,12 +30,14 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  position: absolute; }
+  position: absolute;
+  overflow: hidden; }
 
 #video {
   width: 1600px;
   height: calc(100vh + 60px);
-  position: absolute; }
+  position: absolute;
+  transition: 1.5s ease; }
 
 .black {
   width: 100vw;
@@ -85,6 +94,9 @@ a:hover {
   margin-top: 20px; }
   .top .books a {
     display: block; }
+  .top .books a:hover {
+    transform: scale(1.1);
+    transition: .3s ease; }
   .top .books #venec {
     background-image: url(../img/venec.svg);
     width: 54px;
@@ -109,5 +121,15 @@ a:hover {
     line-height: 15px;
     margin-left: 15px;
     text-decoration: underline; }
+
+@media (max-width: 375px) {
+  .main {
+    height: calc(100vh - 80px);
+    right: 40px; }
+
+  .top .logo {
+    width: calc(100vw - 80px); }
+  .top .teaser {
+    width: calc(100vw - 120px); } }
 
 /*# sourceMappingURL=index.css.map */
