@@ -34,7 +34,7 @@ a {
   overflow: hidden; }
 
 #video {
-  width: 1600px;
+  width: calc((100vh + 60px) * 1.77);
   height: calc(100vh + 60px);
   position: absolute;
   transition: 1.5s ease; }
@@ -78,7 +78,7 @@ a {
   background-repeat: no-repeat;
   background-position: right; }
 .top .teaser {
-  font-family: JournalSans-Regular;
+  font-family: Journal Sans;
   font-size: 14px;
   color: #FFFFFF;
   letter-spacing: 0;
@@ -114,7 +114,7 @@ a {
   align-items: flex-start; }
   .bottom a {
     display: block;
-    font-family: JournalSans-Regular;
+    font-family: Journal Sans;
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: 0;
