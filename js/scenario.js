@@ -2,5 +2,5 @@ $(function(){
   function show() {
     $('#video').toggleClass('hidden')
   }
-  setTimeout(show, 1000)
+  setTimeout(show, 1500)
 })
