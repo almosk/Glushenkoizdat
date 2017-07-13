@@ -69,6 +69,7 @@ a {
   line-height: 10px;
   color: #FFFFFF;
   text-align: right;
+  letter-spacing: 0.75px;
   margin-bottom: -22px; }
 .top .logo {
   width: 552px;
@@ -122,30 +123,32 @@ a {
     margin-left: 15px;
     text-decoration: underline; }
 
-.picture {
-  height: 100vh;
-  width: 177vh;
-  position: absolute;
-  background-image: url(../img/mobile-bg.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: none; }
-
-@media (max-width: 375px) {
-  .main {
-    height: calc(100vh - 80px);
-    right: 40px; }
-
-  .top .logo {
-    width: calc(100vw - 80px); }
-  .top .teaser {
-    width: calc(100vw - 120px); }
-
+@media (max-width: 1024px) {
   #video {
-    display: none;
     opacity: 0; }
 
   .picture {
-    display: block; } }
+    height: 100vh;
+    width: 177vh;
+    position: absolute;
+    background-image: url(../img/mobile-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; } }
+@media (max-width: 375px) {
+  .main {
+    height: calc(100vh - 40px);
+    right: 20px;
+    top: 20px; }
+
+  .top .zakaz {
+    font-size: 6px;
+    line-height: 7px; }
+  .top .logo {
+    width: calc(100vw - 40px); }
+  .top .teaser {
+    width: calc(100vw - 120px);
+    margin-top: -20px; }
+  .top .books a:hover {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=index.css.map */
