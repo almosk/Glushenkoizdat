@@ -163,6 +163,18 @@ a {
   }
 }
 
+.picture {
+  height: 100vh;
+  width: 177vh;
+  position: absolute;
+
+  background-image: url(../img/mobile-bg.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: none;
+}
+
 @media (max-width: 375px) {
   .main {
     height: calc(100vh - 80px);
@@ -176,5 +188,14 @@ a {
     .teaser {
       width: calc(100vw - 120px);
     }
+  }
+
+  #video {
+    display: none;
+    opacity: 0;
+  }
+
+  .picture {
+    display: block;
   }
 }
